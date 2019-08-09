@@ -1,0 +1,49 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+    redis:
+        image: redis:latest
+        restart: always
+        ports:
+            - 6379:6379
+
+    db:
+        image: mysql:latest
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        ports:
+            - 33706:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: ZPJ@abc.123
+
+    web:
+        image: fholzer/nginx-brotli
+        restart: always
+        #network_mode: "bridge"
+        # network_mode: "host"
+        volumes:
+            - ./build:/data/web
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+            - ./nginx/vhosts:/etc/nginx/vhosts
+            - ./nginx/logs:/etc/nginx/logs
+            - ./nginx/ssl:/etc/nginx/ssl
+        ports:
+            - "80:80"
+            # - "443:443"
+        expose:
+            - "80"
+            # - "443"
+    
+    mongodb:
+        image: mongo:latest
+        container_name: "mongodb"
+        environment:
+            - MONGO_DATA_DIR=/data/db
+            - MONGO_LOG_DIR=/dev/null
+        volumes:
+            - ./data/mongo:/data/db
+        ports:
+            - 27017:27017
+        command: mongod --smallfiles --logpath=/dev/null # --quiet

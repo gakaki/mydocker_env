@@ -1,0 +1,582 @@
+2019/08/08 08:00:06 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:00:06 [notice] 1#1: nginx/1.16.0
+2019/08/08 08:00:06 [notice] 1#1: built by gcc 8.3.0 (Alpine 8.3.0) 
+2019/08/08 08:00:06 [notice] 1#1: OS: Linux 4.19.57-microsoft-standard
+2019/08/08 08:00:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:4096
+2019/08/08 08:00:06 [notice] 1#1: start worker processes
+2019/08/08 08:00:06 [notice] 1#1: start worker process 6
+2019/08/08 08:00:06 [notice] 1#1: start worker process 7
+2019/08/08 08:00:06 [alert] 6#6: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:00:06 [alert] 7#7: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:17:58 [error] 6#6: *6 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=12619274adf93bd1d859f37b39cf29baefb3c6ca&timestamp=1565252270&nonce=1565452344 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:17:58 [info] 6#6: *6 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:17:58 [error] 6#6: *5 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=53d36d59e0af0d3ad1e02a04f3092294e834e7e1&timestamp=1565252270&nonce=1565347375 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:17:58 [info] 6#6: *5 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:18:00 [error] 6#6: *7 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=12619274adf93bd1d859f37b39cf29baefb3c6ca&timestamp=1565252270&nonce=1565452344 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:18:00 [error] 6#6: *8 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=53d36d59e0af0d3ad1e02a04f3092294e834e7e1&timestamp=1565252270&nonce=1565347375 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:18:00 [info] 6#6: *8 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:00 [info] 6#6: *7 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:02 [error] 6#6: *9 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=53d36d59e0af0d3ad1e02a04f3092294e834e7e1&timestamp=1565252270&nonce=1565347375 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:18:03 [error] 6#6: *10 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=53d36d59e0af0d3ad1e02a04f3092294e834e7e1&timestamp=1565252270&nonce=1565347375 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:18:03 [info] 6#6: *9 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:03 [error] 6#6: *11 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=12619274adf93bd1d859f37b39cf29baefb3c6ca&timestamp=1565252270&nonce=1565452344 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:18:03 [info] 6#6: *10 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:04 [info] 6#6: *11 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:06 [error] 6#6: *12 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=53d36d59e0af0d3ad1e02a04f3092294e834e7e1&timestamp=1565252270&nonce=1565347375 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:18:06 [error] 6#6: *13 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=12619274adf93bd1d859f37b39cf29baefb3c6ca&timestamp=1565252270&nonce=1565452344 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:18:06 [info] 6#6: *12 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:06 [info] 6#6: *13 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:07 [error] 6#6: *14 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "POST /v1/hook/wework?msg_signature=12619274adf93bd1d859f37b39cf29baefb3c6ca&timestamp=1565252270&nonce=1565452344 HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:18:08 [info] 6#6: *14 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:43 [info] 6#6: *16 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:44 [info] 6#6: *15 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:53 [info] 6#6: *18 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:53 [info] 6#6: *17 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:54 [info] 6#6: *19 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:18:54 [info] 6#6: *20 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:20:04 [notice] 1#1: signal 1 (SIGHUP) received from 22, reconfiguring
+2019/08/08 08:20:04 [notice] 1#1: reconfiguring
+2019/08/08 08:20:04 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:20:04 [notice] 1#1: start worker processes
+2019/08/08 08:20:04 [notice] 1#1: start worker process 23
+2019/08/08 08:20:04 [alert] 23#23: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:20:04 [notice] 1#1: start worker process 24
+2019/08/08 08:20:04 [alert] 24#24: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:20:04 [notice] 6#6: gracefully shutting down
+2019/08/08 08:20:04 [notice] 7#7: gracefully shutting down
+2019/08/08 08:20:04 [notice] 6#6: exiting
+2019/08/08 08:20:04 [notice] 7#7: exiting
+2019/08/08 08:20:04 [notice] 6#6: exit
+2019/08/08 08:20:04 [notice] 7#7: exit
+2019/08/08 08:20:05 [notice] 1#1: signal 17 (SIGCHLD) received from 6
+2019/08/08 08:20:05 [notice] 1#1: worker process 6 exited with code 0
+2019/08/08 08:20:05 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:20:05 [notice] 1#1: signal 17 (SIGCHLD) received from 7
+2019/08/08 08:20:05 [notice] 1#1: worker process 7 exited with code 0
+2019/08/08 08:20:05 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:20:42 [error] 23#23: *21 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /v1/hook/wework?msg_signature=bca8495b96802aacba5bd2e3affde478eb0e4f35&timestamp=1565252441&nonce=1564983320&echostr=NVlGE8WMxBNzvXZ3WajbIN7F8%2FtEe5nUaoJ7yufn%2BKqcIWY45VD%2F%2B2Z7R6kaqBzrRvOVNsPurh3PV3AIZwuANA%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:20:42 [info] 23#23: *21 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:20:45 [error] 23#23: *22 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /v1/hook/wework?msg_signature=56d708427d0c23efdf3f23d2b6a0f3977a789908&timestamp=1565252441&nonce=1564970433&echostr=YQrrJiM1c08%2F%2FuMVUoMsFQ5uzqG4gpdkJnZj8pWPPboBF02MtOVr8LhqtMVdVvoURwMHFBANVzJ%2FtV3oTdrV1w%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:20:45 [info] 23#23: *22 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:20:50 [error] 23#23: *23 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /v1/hook/wework?msg_signature=56d708427d0c23efdf3f23d2b6a0f3977a789908&timestamp=1565252441&nonce=1564970433&echostr=YQrrJiM1c08%2F%2FuMVUoMsFQ5uzqG4gpdkJnZj8pWPPboBF02MtOVr8LhqtMVdVvoURwMHFBANVzJ%2FtV3oTdrV1w%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:20:50 [info] 23#23: *23 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:20:51 [info] 23#23: *24 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:20:52 [info] 23#23: *25 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:20:53 [info] 23#23: *26 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:20:54 [info] 23#23: *27 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:20:55 [info] 23#23: *28 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:20:55 [info] 23#23: *29 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:20:56 [info] 23#23: *30 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:20:56 [info] 23#23: *31 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:20:57 [info] 23#23: *32 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:20:57 [info] 23#23: *33 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:20:57 [info] 23#23: *34 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:20:58 [error] 23#23: *35 open() "/etc/nginx/html/v1/hook/wework" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /v1/hook/wework?msg_signature=56d708427d0c23efdf3f23d2b6a0f3977a789908&timestamp=1565252441&nonce=1564970433&echostr=YQrrJiM1c08%2F%2FuMVUoMsFQ5uzqG4gpdkJnZj8pWPPboBF02MtOVr8LhqtMVdVvoURwMHFBANVzJ%2FtV3oTdrV1w%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:20:58 [info] 23#23: *35 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:20:59 [info] 23#23: *37 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:20:59 [info] 23#23: *36 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:20:59 [info] 23#23: *38 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:04 [info] 23#23: *39 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:05 [info] 23#23: *40 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:21:05 [info] 23#23: *45 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:21:06 [info] 23#23: *42 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:06 [info] 23#23: *44 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:06 [info] 23#23: *43 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:07 [info] 23#23: *48 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:07 [info] 23#23: *46 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:07 [info] 23#23: *41 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:21:07 [info] 23#23: *47 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:08 [info] 23#23: *50 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:08 [info] 23#23: *49 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:21:10 [info] 23#23: *51 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:23:50 [notice] 1#1: signal 1 (SIGHUP) received from 29, reconfiguring
+2019/08/08 08:23:50 [notice] 1#1: reconfiguring
+2019/08/08 08:23:50 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:23:50 [notice] 1#1: start worker processes
+2019/08/08 08:23:50 [notice] 1#1: start worker process 30
+2019/08/08 08:23:50 [alert] 30#30: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:23:50 [notice] 1#1: start worker process 31
+2019/08/08 08:23:50 [alert] 31#31: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:23:50 [notice] 23#23: gracefully shutting down
+2019/08/08 08:23:50 [notice] 24#24: gracefully shutting down
+2019/08/08 08:23:50 [notice] 23#23: exiting
+2019/08/08 08:23:50 [notice] 24#24: exiting
+2019/08/08 08:23:50 [notice] 24#24: exit
+2019/08/08 08:23:50 [notice] 23#23: exit
+2019/08/08 08:23:50 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2019/08/08 08:23:50 [notice] 1#1: worker process 23 exited with code 0
+2019/08/08 08:23:50 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:23:51 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2019/08/08 08:23:51 [notice] 1#1: worker process 24 exited with code 0
+2019/08/08 08:23:51 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:24:27 [error] 30#30: *52 invalid URL prefix in "", client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework?msg_signature=b230f7cfa3d02513bb4c449c546e7e18652c098d&timestamp=1565252664&nonce=1565435885&echostr=CiTQBMM9sfP9L6LKqFj4%2BgAqKvWGS1zUOGlnjGthEOnxeLJ33%2F1GYAuj7q%2FyvX0hDOSnFgORXX9k4SJKmgLVfg%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:24:29 [error] 30#30: *53 invalid URL prefix in "", client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework?msg_signature=b230f7cfa3d02513bb4c449c546e7e18652c098d&timestamp=1565252664&nonce=1565435885&echostr=CiTQBMM9sfP9L6LKqFj4%2BgAqKvWGS1zUOGlnjGthEOnxeLJ33%2F1GYAuj7q%2FyvX0hDOSnFgORXX9k4SJKmgLVfg%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:24:29 [error] 30#30: *54 invalid URL prefix in "", client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework?msg_signature=eda91d755b2ba8a0ec832ac04ddd45416ef8ef67&timestamp=1565252664&nonce=1565014011&echostr=u3aw8dslbnGIqfD%2FKvRil5uM7KE7OXwCrES9qQyYHv1rpwmvDD4WqZ6ALOGgxFK%2BRefebqGLTqO1b2T0JbkMcw%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:24:30 [error] 30#30: *56 invalid URL prefix in "", client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework?msg_signature=eda91d755b2ba8a0ec832ac04ddd45416ef8ef67&timestamp=1565252664&nonce=1565014011&echostr=u3aw8dslbnGIqfD%2FKvRil5uM7KE7OXwCrES9qQyYHv1rpwmvDD4WqZ6ALOGgxFK%2BRefebqGLTqO1b2T0JbkMcw%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:24:30 [error] 30#30: *57 invalid URL prefix in "", client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework?msg_signature=eda91d755b2ba8a0ec832ac04ddd45416ef8ef67&timestamp=1565252664&nonce=1565014011&echostr=u3aw8dslbnGIqfD%2FKvRil5uM7KE7OXwCrES9qQyYHv1rpwmvDD4WqZ6ALOGgxFK%2BRefebqGLTqO1b2T0JbkMcw%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:24:31 [error] 30#30: *55 invalid URL prefix in "", client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework?msg_signature=b230f7cfa3d02513bb4c449c546e7e18652c098d&timestamp=1565252664&nonce=1565435885&echostr=CiTQBMM9sfP9L6LKqFj4%2BgAqKvWGS1zUOGlnjGthEOnxeLJ33%2F1GYAuj7q%2FyvX0hDOSnFgORXX9k4SJKmgLVfg%3D%3D HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:25:02 [notice] 1#1: signal 1 (SIGHUP) received from 34, reconfiguring
+2019/08/08 08:25:02 [notice] 1#1: reconfiguring
+2019/08/08 08:25:02 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:25:02 [notice] 1#1: start worker processes
+2019/08/08 08:25:02 [notice] 1#1: start worker process 35
+2019/08/08 08:25:02 [alert] 35#35: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:25:02 [notice] 1#1: start worker process 36
+2019/08/08 08:25:02 [alert] 36#36: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:25:02 [notice] 30#30: gracefully shutting down
+2019/08/08 08:25:02 [notice] 31#31: gracefully shutting down
+2019/08/08 08:25:02 [notice] 30#30: exiting
+2019/08/08 08:25:02 [notice] 31#31: exiting
+2019/08/08 08:25:02 [notice] 31#31: exit
+2019/08/08 08:25:02 [notice] 30#30: exit
+2019/08/08 08:25:02 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2019/08/08 08:25:02 [notice] 1#1: worker process 30 exited with code 0
+2019/08/08 08:25:02 [notice] 1#1: worker process 31 exited with code 0
+2019/08/08 08:25:02 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:25:13 [info] 35#35: *58 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:25:14 [info] 35#35: *59 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:25:15 [info] 35#35: *60 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:25:16 [info] 35#35: *61 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:25:17 [info] 35#35: *63 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:25:17 [info] 35#35: *62 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:25:34 [notice] 1#1: signal 1 (SIGHUP) received from 38, reconfiguring
+2019/08/08 08:25:34 [notice] 1#1: reconfiguring
+2019/08/08 08:25:34 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:25:34 [notice] 1#1: start worker processes
+2019/08/08 08:25:34 [notice] 1#1: start worker process 39
+2019/08/08 08:25:34 [alert] 39#39: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:25:34 [notice] 1#1: start worker process 40
+2019/08/08 08:25:34 [alert] 40#40: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:25:34 [notice] 35#35: gracefully shutting down
+2019/08/08 08:25:34 [notice] 36#36: gracefully shutting down
+2019/08/08 08:25:34 [notice] 35#35: exiting
+2019/08/08 08:25:34 [notice] 36#36: exiting
+2019/08/08 08:25:34 [notice] 35#35: exit
+2019/08/08 08:25:34 [notice] 36#36: exit
+2019/08/08 08:25:34 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2019/08/08 08:25:34 [notice] 1#1: worker process 36 exited with code 0
+2019/08/08 08:25:34 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:25:34 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2019/08/08 08:25:34 [notice] 1#1: worker process 35 exited with code 0
+2019/08/08 08:25:34 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:25:41 [info] 39#39: *64 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:25:42 [info] 39#39: *65 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:25:43 [info] 39#39: *67 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:25:43 [info] 39#39: *66 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:25:46 [info] 39#39: *68 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:26:19 [info] 39#39: *69 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:26:22 [info] 39#39: *70 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:26:24 [info] 39#39: *73 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:26:24 [info] 39#39: *71 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:26:26 [info] 39#39: *72 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:26:37 [info] 39#39: *75 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:26:37 [info] 39#39: *74 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:26:38 [info] 39#39: *76 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:26:39 [info] 39#39: *77 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:27:05 [info] 39#39: *78 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:05 [info] 39#39: *79 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:27:07 [info] 39#39: *80 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:08 [info] 39#39: *81 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:27:09 [info] 39#39: *82 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:09 [info] 39#39: *83 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:14 [info] 39#39: *84 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:19 [info] 39#39: *86 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:19 [info] 39#39: *85 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:20 [info] 39#39: *87 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:27:21 [info] 39#39: *88 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:27:33 [info] 39#39: *89 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:35 [info] 39#39: *91 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:35 [info] 39#39: *93 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:27:35 [info] 39#39: *92 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:27:37 [info] 39#39: *94 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:27:46 [info] 39#39: *90 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:28:21 [notice] 1#1: signal 1 (SIGHUP) received from 42, reconfiguring
+2019/08/08 08:28:21 [notice] 1#1: reconfiguring
+2019/08/08 08:28:21 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:28:21 [notice] 1#1: start worker processes
+2019/08/08 08:28:21 [notice] 1#1: start worker process 43
+2019/08/08 08:28:21 [alert] 43#43: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:28:21 [notice] 1#1: start worker process 44
+2019/08/08 08:28:21 [alert] 44#44: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:28:21 [notice] 39#39: gracefully shutting down
+2019/08/08 08:28:21 [notice] 40#40: gracefully shutting down
+2019/08/08 08:28:21 [notice] 39#39: exiting
+2019/08/08 08:28:21 [notice] 40#40: exiting
+2019/08/08 08:28:21 [notice] 39#39: exit
+2019/08/08 08:28:21 [notice] 40#40: exit
+2019/08/08 08:28:21 [notice] 1#1: signal 17 (SIGCHLD) received from 39
+2019/08/08 08:28:21 [notice] 1#1: worker process 39 exited with code 0
+2019/08/08 08:28:21 [notice] 1#1: worker process 40 exited with code 0
+2019/08/08 08:28:21 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:28:25 [notice] 1#1: signal 1 (SIGHUP) received from 46, reconfiguring
+2019/08/08 08:28:25 [notice] 1#1: reconfiguring
+2019/08/08 08:28:25 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:28:25 [notice] 1#1: start worker processes
+2019/08/08 08:28:25 [notice] 1#1: start worker process 47
+2019/08/08 08:28:25 [alert] 47#47: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:28:25 [notice] 1#1: start worker process 48
+2019/08/08 08:28:25 [alert] 48#48: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:28:25 [notice] 43#43: gracefully shutting down
+2019/08/08 08:28:25 [notice] 44#44: gracefully shutting down
+2019/08/08 08:28:25 [notice] 44#44: exiting
+2019/08/08 08:28:25 [notice] 43#43: exiting
+2019/08/08 08:28:25 [notice] 43#43: exit
+2019/08/08 08:28:25 [notice] 44#44: exit
+2019/08/08 08:28:25 [notice] 1#1: signal 17 (SIGCHLD) received from 43
+2019/08/08 08:28:25 [notice] 1#1: worker process 43 exited with code 0
+2019/08/08 08:28:25 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:28:25 [notice] 1#1: signal 17 (SIGCHLD) received from 44
+2019/08/08 08:28:25 [notice] 1#1: worker process 44 exited with code 0
+2019/08/08 08:28:25 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:28:32 [info] 47#47: *95 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:28:34 [info] 47#47: *96 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:28:41 [info] 47#47: *98 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:28:42 [info] 47#47: *99 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:28:43 [info] 47#47: *97 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:28:43 [info] 47#47: *101 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:28:44 [info] 47#47: *102 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:28:45 [info] 47#47: *100 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:28:46 [info] 47#47: *103 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:28:47 [info] 47#47: *104 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:30:35 [notice] 1#1: signal 1 (SIGHUP) received from 50, reconfiguring
+2019/08/08 08:30:35 [notice] 1#1: reconfiguring
+2019/08/08 08:30:35 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:30:35 [notice] 1#1: start worker processes
+2019/08/08 08:30:35 [notice] 1#1: start worker process 51
+2019/08/08 08:30:35 [alert] 51#51: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:30:35 [notice] 1#1: start worker process 52
+2019/08/08 08:30:35 [alert] 52#52: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:30:35 [notice] 47#47: gracefully shutting down
+2019/08/08 08:30:35 [notice] 48#48: gracefully shutting down
+2019/08/08 08:30:35 [notice] 47#47: exiting
+2019/08/08 08:30:35 [notice] 48#48: exiting
+2019/08/08 08:30:35 [notice] 47#47: exit
+2019/08/08 08:30:35 [notice] 48#48: exit
+2019/08/08 08:30:35 [notice] 1#1: signal 17 (SIGCHLD) received from 47
+2019/08/08 08:30:35 [notice] 1#1: worker process 47 exited with code 0
+2019/08/08 08:30:35 [notice] 1#1: worker process 48 exited with code 0
+2019/08/08 08:30:35 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:30:35 [notice] 1#1: signal 17 (SIGCHLD) received from 48
+2019/08/08 08:30:47 [info] 51#51: *106 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:30:47 [info] 51#51: *105 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:30:48 [info] 51#51: *107 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:30:48 [info] 51#51: *108 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:30:48 [info] 51#51: *109 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:30:55 [info] 51#51: *110 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:30:56 [info] 51#51: *112 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:30:56 [info] 51#51: *113 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:30:56 [info] 51#51: *111 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:31:09 [notice] 1#1: signal 1 (SIGHUP) received from 55, reconfiguring
+2019/08/08 08:31:09 [notice] 1#1: reconfiguring
+2019/08/08 08:31:09 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:31:09 [notice] 1#1: start worker processes
+2019/08/08 08:31:09 [notice] 1#1: start worker process 56
+2019/08/08 08:31:09 [alert] 56#56: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:31:09 [notice] 1#1: start worker process 57
+2019/08/08 08:31:09 [alert] 57#57: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:31:09 [notice] 51#51: gracefully shutting down
+2019/08/08 08:31:09 [notice] 52#52: gracefully shutting down
+2019/08/08 08:31:09 [notice] 51#51: exiting
+2019/08/08 08:31:09 [notice] 52#52: exiting
+2019/08/08 08:31:09 [notice] 51#51: exit
+2019/08/08 08:31:09 [notice] 52#52: exit
+2019/08/08 08:31:09 [notice] 1#1: signal 17 (SIGCHLD) received from 52
+2019/08/08 08:31:09 [notice] 1#1: worker process 52 exited with code 0
+2019/08/08 08:31:09 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:31:09 [notice] 1#1: signal 17 (SIGCHLD) received from 51
+2019/08/08 08:31:09 [notice] 1#1: worker process 51 exited with code 0
+2019/08/08 08:31:09 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:31:14 [info] 56#56: *114 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:31:14 [info] 56#56: *115 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:33:07 [notice] 1#1: signal 1 (SIGHUP) received from 59, reconfiguring
+2019/08/08 08:33:07 [notice] 1#1: reconfiguring
+2019/08/08 08:33:07 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:33:07 [notice] 1#1: start worker processes
+2019/08/08 08:33:07 [notice] 1#1: start worker process 60
+2019/08/08 08:33:07 [alert] 60#60: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:33:07 [notice] 1#1: start worker process 61
+2019/08/08 08:33:07 [alert] 61#61: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:33:07 [notice] 56#56: gracefully shutting down
+2019/08/08 08:33:07 [notice] 57#57: gracefully shutting down
+2019/08/08 08:33:07 [notice] 56#56: exiting
+2019/08/08 08:33:07 [notice] 57#57: exiting
+2019/08/08 08:33:07 [notice] 56#56: exit
+2019/08/08 08:33:07 [notice] 57#57: exit
+2019/08/08 08:33:08 [notice] 1#1: signal 17 (SIGCHLD) received from 56
+2019/08/08 08:33:08 [notice] 1#1: worker process 56 exited with code 0
+2019/08/08 08:33:08 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:33:08 [notice] 1#1: signal 17 (SIGCHLD) received from 57
+2019/08/08 08:33:08 [notice] 1#1: worker process 57 exited with code 0
+2019/08/08 08:33:08 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:33:17 [info] 60#60: *117 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:33:17 [info] 60#60: *116 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:33:17 [info] 60#60: *118 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:33:18 [info] 60#60: *119 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:33:19 [info] 60#60: *120 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:33:19 [info] 60#60: *121 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:33:50 [info] 60#60: *123 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:33:51 [info] 60#60: *122 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:35:18 [info] 60#60: *124 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:35:23 [info] 60#60: *125 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:35:26 [info] 60#60: *126 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:35:30 [notice] 1#1: signal 1 (SIGHUP) received from 64, reconfiguring
+2019/08/08 08:35:30 [notice] 1#1: reconfiguring
+2019/08/08 08:35:30 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:35:30 [notice] 1#1: start worker processes
+2019/08/08 08:35:30 [notice] 1#1: start worker process 65
+2019/08/08 08:35:30 [alert] 65#65: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:35:30 [notice] 1#1: start worker process 66
+2019/08/08 08:35:30 [alert] 66#66: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:35:30 [notice] 60#60: gracefully shutting down
+2019/08/08 08:35:30 [notice] 61#61: gracefully shutting down
+2019/08/08 08:35:30 [notice] 60#60: exiting
+2019/08/08 08:35:30 [notice] 61#61: exiting
+2019/08/08 08:35:30 [notice] 60#60: exit
+2019/08/08 08:35:30 [notice] 61#61: exit
+2019/08/08 08:35:30 [notice] 1#1: signal 17 (SIGCHLD) received from 60
+2019/08/08 08:35:30 [notice] 1#1: worker process 60 exited with code 0
+2019/08/08 08:35:30 [notice] 1#1: worker process 61 exited with code 0
+2019/08/08 08:35:30 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:35:32 [notice] 1#1: signal 1 (SIGHUP) received from 67, reconfiguring
+2019/08/08 08:35:32 [notice] 1#1: reconfiguring
+2019/08/08 08:35:32 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:35:32 [notice] 1#1: start worker processes
+2019/08/08 08:35:32 [notice] 1#1: start worker process 68
+2019/08/08 08:35:32 [alert] 68#68: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:35:32 [notice] 1#1: start worker process 69
+2019/08/08 08:35:32 [alert] 69#69: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:35:33 [notice] 65#65: gracefully shutting down
+2019/08/08 08:35:33 [notice] 66#66: gracefully shutting down
+2019/08/08 08:35:33 [notice] 65#65: exiting
+2019/08/08 08:35:33 [notice] 66#66: exiting
+2019/08/08 08:35:33 [notice] 65#65: exit
+2019/08/08 08:35:33 [notice] 66#66: exit
+2019/08/08 08:35:33 [notice] 1#1: signal 17 (SIGCHLD) received from 66
+2019/08/08 08:35:33 [notice] 1#1: worker process 66 exited with code 0
+2019/08/08 08:35:33 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:35:33 [notice] 1#1: signal 17 (SIGCHLD) received from 65
+2019/08/08 08:35:33 [notice] 1#1: worker process 65 exited with code 0
+2019/08/08 08:35:33 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:37:04 [notice] 1#1: signal 1 (SIGHUP) received from 71, reconfiguring
+2019/08/08 08:37:04 [notice] 1#1: reconfiguring
+2019/08/08 08:37:04 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:37:04 [notice] 1#1: start worker processes
+2019/08/08 08:37:04 [notice] 1#1: start worker process 72
+2019/08/08 08:37:04 [alert] 72#72: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:37:04 [notice] 1#1: start worker process 73
+2019/08/08 08:37:04 [alert] 73#73: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:37:04 [notice] 68#68: gracefully shutting down
+2019/08/08 08:37:04 [notice] 69#69: gracefully shutting down
+2019/08/08 08:37:04 [notice] 69#69: exiting
+2019/08/08 08:37:04 [notice] 68#68: exiting
+2019/08/08 08:37:04 [notice] 69#69: exit
+2019/08/08 08:37:04 [notice] 68#68: exit
+2019/08/08 08:37:04 [notice] 1#1: signal 17 (SIGCHLD) received from 69
+2019/08/08 08:37:04 [notice] 1#1: worker process 69 exited with code 0
+2019/08/08 08:37:04 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:37:04 [notice] 1#1: signal 17 (SIGCHLD) received from 68
+2019/08/08 08:37:04 [notice] 1#1: worker process 68 exited with code 0
+2019/08/08 08:37:04 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:37:16 [info] 72#72: *130 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?status=deleted HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?status=deleted", host: "gw.free.idcfengye.com", referrer: "http://gw.free.idcfengye.com/hook/wework?status=deleted"
+2019/08/08 08:37:20 [info] 72#72: *132 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:38:12 [info] 72#72: *137 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:38:13 [info] 72#72: *138 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:39:28 [info] 72#72: *142 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:39:32 [info] 72#72: *144 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:39:33 [info] 72#72: *146 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:39:33 [info] 72#72: *145 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:39:33 [info] 72#72: *147 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:39:40 [info] 72#72: *143 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:43:24 [info] 72#72: *152 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:43:24 [info] 72#72: *153 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:43:32 [info] 72#72: *154 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:43:32 [info] 72#72: *155 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:44:25 [info] 72#72: *157 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:44:26 [info] 72#72: *158 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:44:28 [info] 72#72: *159 client 172.21.104.106 closed keepalive connection (104: Connection reset by peer)
+2019/08/08 08:45:18 [error] 72#72: *160 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /favicon.ico HTTP/1.1", host: "gw.free.idcfengye.com", referrer: "http://gw.free.idcfengye.com/hook/wework/"
+2019/08/08 08:45:24 [error] 72#72: *160 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET / HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:45:26 [error] 72#72: *160 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET / HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:45:32 [error] 72#72: *160 open() "/etc/nginx/html/hook/webhook" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/webhook HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:45:34 [error] 72#72: *160 open() "/etc/nginx/html/hook/webhook" failed (2: No such file or directory), client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/webhook HTTP/1.1", host: "gw.free.idcfengye.com"
+2019/08/08 08:45:50 [info] 72#72: *165 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:45:50 [info] 72#72: *167 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:45:53 [info] 72#72: *169 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:45:53 [info] 72#72: *171 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:45:54 [info] 72#72: *173 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:45:54 [info] 72#72: *175 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:45:55 [info] 72#72: *177 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:45:55 [info] 72#72: *179 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:46:49 [info] 72#72: *188 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:46:51 [info] 72#72: *190 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:46:51 [info] 72#72: *187 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=0da42512c24e6fe2b57d21b52a1246e264379f58&timestamp=1565254008&nonce=1564867826&echostr=DzUEC6YzbCbmKe7yXR85s7QCFXUd3RG0BOHQRXyutXMEXmvTtGW4t3Mhp8XbjpPJpcUlWGEFD7%2FFN%2FF0mI%2FlVg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=0da42512c24e6fe2b57d21b52a1246e264379f58&timestamp=1565254008&nonce=1564867826&echostr=DzUEC6YzbCbmKe7yXR85s7QCFXUd3RG0BOHQRXyutXMEXmvTtGW4t3Mhp8XbjpPJpcUlWGEFD7%2FFN%2FF0mI%2FlVg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:46:51 [info] 72#72: *192 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:46:53 [info] 72#72: *195 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=9c9ad6040917a802a5830ac29cb582de7e282428&timestamp=1565254011&nonce=1565072018&echostr=GBSrgM2WPSGrQRIkzfUjGaKzOYqaxAUthtmFUejmjkLCNM4%2BLNXXUE8AM8NT2%2B%2FQmh0v6%2BTWZGmZlw1JqnUn5g%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=9c9ad6040917a802a5830ac29cb582de7e282428&timestamp=1565254011&nonce=1565072018&echostr=GBSrgM2WPSGrQRIkzfUjGaKzOYqaxAUthtmFUejmjkLCNM4%2BLNXXUE8AM8NT2%2B%2FQmh0v6%2BTWZGmZlw1JqnUn5g%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:46:53 [info] 72#72: *197 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=0da42512c24e6fe2b57d21b52a1246e264379f58&timestamp=1565254008&nonce=1564867826&echostr=DzUEC6YzbCbmKe7yXR85s7QCFXUd3RG0BOHQRXyutXMEXmvTtGW4t3Mhp8XbjpPJpcUlWGEFD7%2FFN%2FF0mI%2FlVg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=0da42512c24e6fe2b57d21b52a1246e264379f58&timestamp=1565254008&nonce=1564867826&echostr=DzUEC6YzbCbmKe7yXR85s7QCFXUd3RG0BOHQRXyutXMEXmvTtGW4t3Mhp8XbjpPJpcUlWGEFD7%2FFN%2FF0mI%2FlVg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:46:55 [info] 72#72: *199 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=54f9129223a91786d2d18b59de1a789333e953e0&timestamp=1565254011&nonce=1565061276&echostr=5Kj%2F%2Faj2aSxpdLR9aH6vDcgoH325Zbc7dIJF%2BGNcWgU%2Bnl%2FjlZwf3boBYkffrgOSnD0JUBjgkmUo%2Ft9BcePnOg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=54f9129223a91786d2d18b59de1a789333e953e0&timestamp=1565254011&nonce=1565061276&echostr=5Kj%2F%2Faj2aSxpdLR9aH6vDcgoH325Zbc7dIJF%2BGNcWgU%2Bnl%2FjlZwf3boBYkffrgOSnD0JUBjgkmUo%2Ft9BcePnOg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:46:55 [info] 72#72: *201 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=9c9ad6040917a802a5830ac29cb582de7e282428&timestamp=1565254011&nonce=1565072018&echostr=GBSrgM2WPSGrQRIkzfUjGaKzOYqaxAUthtmFUejmjkLCNM4%2BLNXXUE8AM8NT2%2B%2FQmh0v6%2BTWZGmZlw1JqnUn5g%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=9c9ad6040917a802a5830ac29cb582de7e282428&timestamp=1565254011&nonce=1565072018&echostr=GBSrgM2WPSGrQRIkzfUjGaKzOYqaxAUthtmFUejmjkLCNM4%2BLNXXUE8AM8NT2%2B%2FQmh0v6%2BTWZGmZlw1JqnUn5g%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:46:57 [info] 72#72: *203 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=927fbb777561b414c0155d0630108a0e62cddb56&timestamp=1565254013&nonce=1565359676&echostr=nmRVoFOaEVr3tuhymFgUp9Nkcy7Yj%2BXoXnPNjvOXuaUnO3qlmsIkkaOtDaWoFM3NPjGEQNztlP5UWPUkTmT0ZA%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=927fbb777561b414c0155d0630108a0e62cddb56&timestamp=1565254013&nonce=1565359676&echostr=nmRVoFOaEVr3tuhymFgUp9Nkcy7Yj%2BXoXnPNjvOXuaUnO3qlmsIkkaOtDaWoFM3NPjGEQNztlP5UWPUkTmT0ZA%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:46:58 [info] 72#72: *206 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:46:58 [info] 72#72: *208 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=9c9ad6040917a802a5830ac29cb582de7e282428&timestamp=1565254011&nonce=1565072018&echostr=GBSrgM2WPSGrQRIkzfUjGaKzOYqaxAUthtmFUejmjkLCNM4%2BLNXXUE8AM8NT2%2B%2FQmh0v6%2BTWZGmZlw1JqnUn5g%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=9c9ad6040917a802a5830ac29cb582de7e282428&timestamp=1565254011&nonce=1565072018&echostr=GBSrgM2WPSGrQRIkzfUjGaKzOYqaxAUthtmFUejmjkLCNM4%2BLNXXUE8AM8NT2%2B%2FQmh0v6%2BTWZGmZlw1JqnUn5g%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:00 [info] 72#72: *210 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:00 [info] 72#72: *213 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=405771c6bb6d33764204a5668d4e3435395378b5&timestamp=1565254015&nonce=1565449127&echostr=IvbTAJKOlGfsu2kxj4Y6fq39lIq4VJbBSjLbn4KICmN81uaD0L6bk%2BMGvCd%2FnZ9x50Pg3uVQ0WPNtDt4%2FkOpOw%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=405771c6bb6d33764204a5668d4e3435395378b5&timestamp=1565254015&nonce=1565449127&echostr=IvbTAJKOlGfsu2kxj4Y6fq39lIq4VJbBSjLbn4KICmN81uaD0L6bk%2BMGvCd%2FnZ9x50Pg3uVQ0WPNtDt4%2FkOpOw%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:00 [info] 72#72: *216 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=82ebba255623409efc8c76fed701c1db6d622e54&timestamp=1565254015&nonce=1565463606&echostr=COkfz8G%2FrBJcvA0wRXERu7Lv2eJopauZ2x42qBN%2Fc9hkPD6P94by715jZZ7w45H0Es%2BZrCaWbRFlcAmMcGtE1g%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=82ebba255623409efc8c76fed701c1db6d622e54&timestamp=1565254015&nonce=1565463606&echostr=COkfz8G%2FrBJcvA0wRXERu7Lv2eJopauZ2x42qBN%2Fc9hkPD6P94by715jZZ7w45H0Es%2BZrCaWbRFlcAmMcGtE1g%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:00 [info] 72#72: *215 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=c4fef80728a44d2a0be9d0d396e51f5d4a6d4003&timestamp=1565254013&nonce=1565344831&echostr=3zukvYqNkq2lmJOyPQsI3EA5GJqfhr6xG5xVYzJ%2FlPWBXn8DmfdPJBRnhuqumE8acrs%2BA4Ubp8N%2FMgqkpfa8OA%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=c4fef80728a44d2a0be9d0d396e51f5d4a6d4003&timestamp=1565254013&nonce=1565344831&echostr=3zukvYqNkq2lmJOyPQsI3EA5GJqfhr6xG5xVYzJ%2FlPWBXn8DmfdPJBRnhuqumE8acrs%2BA4Ubp8N%2FMgqkpfa8OA%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:00 [info] 72#72: *219 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=82ebba255623409efc8c76fed701c1db6d622e54&timestamp=1565254015&nonce=1565463606&echostr=COkfz8G%2FrBJcvA0wRXERu7Lv2eJopauZ2x42qBN%2Fc9hkPD6P94by715jZZ7w45H0Es%2BZrCaWbRFlcAmMcGtE1g%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=82ebba255623409efc8c76fed701c1db6d622e54&timestamp=1565254015&nonce=1565463606&echostr=COkfz8G%2FrBJcvA0wRXERu7Lv2eJopauZ2x42qBN%2Fc9hkPD6P94by715jZZ7w45H0Es%2BZrCaWbRFlcAmMcGtE1g%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:00 [info] 72#72: *221 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=405771c6bb6d33764204a5668d4e3435395378b5&timestamp=1565254015&nonce=1565449127&echostr=IvbTAJKOlGfsu2kxj4Y6fq39lIq4VJbBSjLbn4KICmN81uaD0L6bk%2BMGvCd%2FnZ9x50Pg3uVQ0WPNtDt4%2FkOpOw%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=405771c6bb6d33764204a5668d4e3435395378b5&timestamp=1565254015&nonce=1565449127&echostr=IvbTAJKOlGfsu2kxj4Y6fq39lIq4VJbBSjLbn4KICmN81uaD0L6bk%2BMGvCd%2FnZ9x50Pg3uVQ0WPNtDt4%2FkOpOw%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:00 [info] 72#72: *223 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=927fbb777561b414c0155d0630108a0e62cddb56&timestamp=1565254013&nonce=1565359676&echostr=nmRVoFOaEVr3tuhymFgUp9Nkcy7Yj%2BXoXnPNjvOXuaUnO3qlmsIkkaOtDaWoFM3NPjGEQNztlP5UWPUkTmT0ZA%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=927fbb777561b414c0155d0630108a0e62cddb56&timestamp=1565254013&nonce=1565359676&echostr=nmRVoFOaEVr3tuhymFgUp9Nkcy7Yj%2BXoXnPNjvOXuaUnO3qlmsIkkaOtDaWoFM3NPjGEQNztlP5UWPUkTmT0ZA%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:00 [info] 72#72: *212 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=82ebba255623409efc8c76fed701c1db6d622e54&timestamp=1565254015&nonce=1565463606&echostr=COkfz8G%2FrBJcvA0wRXERu7Lv2eJopauZ2x42qBN%2Fc9hkPD6P94by715jZZ7w45H0Es%2BZrCaWbRFlcAmMcGtE1g%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=82ebba255623409efc8c76fed701c1db6d622e54&timestamp=1565254015&nonce=1565463606&echostr=COkfz8G%2FrBJcvA0wRXERu7Lv2eJopauZ2x42qBN%2Fc9hkPD6P94by715jZZ7w45H0Es%2BZrCaWbRFlcAmMcGtE1g%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:01 [info] 72#72: *226 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=927fbb777561b414c0155d0630108a0e62cddb56&timestamp=1565254013&nonce=1565359676&echostr=nmRVoFOaEVr3tuhymFgUp9Nkcy7Yj%2BXoXnPNjvOXuaUnO3qlmsIkkaOtDaWoFM3NPjGEQNztlP5UWPUkTmT0ZA%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=927fbb777561b414c0155d0630108a0e62cddb56&timestamp=1565254013&nonce=1565359676&echostr=nmRVoFOaEVr3tuhymFgUp9Nkcy7Yj%2BXoXnPNjvOXuaUnO3qlmsIkkaOtDaWoFM3NPjGEQNztlP5UWPUkTmT0ZA%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:02 [info] 72#72: *228 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=405771c6bb6d33764204a5668d4e3435395378b5&timestamp=1565254015&nonce=1565449127&echostr=IvbTAJKOlGfsu2kxj4Y6fq39lIq4VJbBSjLbn4KICmN81uaD0L6bk%2BMGvCd%2FnZ9x50Pg3uVQ0WPNtDt4%2FkOpOw%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=405771c6bb6d33764204a5668d4e3435395378b5&timestamp=1565254015&nonce=1565449127&echostr=IvbTAJKOlGfsu2kxj4Y6fq39lIq4VJbBSjLbn4KICmN81uaD0L6bk%2BMGvCd%2FnZ9x50Pg3uVQ0WPNtDt4%2FkOpOw%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:07 [info] 72#72: *230 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:08 [info] 72#72: *233 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:09 [info] 72#72: *237 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=fdb81385b73459e94fa0c7413daa5d9e1859902c&timestamp=1565254025&nonce=1565139312&echostr=xz678X0ufdvHOVIEQcrymoqelo4QRzAK3iZm6hxoBz42OBDLBAibadjWW1AUs5CaxgQGpRf07SLZzKPhSfDv1Q%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=fdb81385b73459e94fa0c7413daa5d9e1859902c&timestamp=1565254025&nonce=1565139312&echostr=xz678X0ufdvHOVIEQcrymoqelo4QRzAK3iZm6hxoBz42OBDLBAibadjWW1AUs5CaxgQGpRf07SLZzKPhSfDv1Q%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:09 [info] 72#72: *235 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:10 [info] 72#72: *232 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=91c38861c7bc3e7967643c90a75a14a7de5a4b21&timestamp=1565254025&nonce=1565137293&echostr=xxUxyimGXJVLLEIQoLcEXs285lZTgmEEjhiMqJ5iYjCiTS9Hnuenw%2FZRkK2Mx8jOuapb1kV1eoKpaCZGJL4oYg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=91c38861c7bc3e7967643c90a75a14a7de5a4b21&timestamp=1565254025&nonce=1565137293&echostr=xxUxyimGXJVLLEIQoLcEXs285lZTgmEEjhiMqJ5iYjCiTS9Hnuenw%2FZRkK2Mx8jOuapb1kV1eoKpaCZGJL4oYg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:11 [info] 72#72: *241 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=fdb81385b73459e94fa0c7413daa5d9e1859902c&timestamp=1565254025&nonce=1565139312&echostr=xz678X0ufdvHOVIEQcrymoqelo4QRzAK3iZm6hxoBz42OBDLBAibadjWW1AUs5CaxgQGpRf07SLZzKPhSfDv1Q%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=fdb81385b73459e94fa0c7413daa5d9e1859902c&timestamp=1565254025&nonce=1565139312&echostr=xz678X0ufdvHOVIEQcrymoqelo4QRzAK3iZm6hxoBz42OBDLBAibadjWW1AUs5CaxgQGpRf07SLZzKPhSfDv1Q%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:12 [info] 72#72: *239 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=54f9129223a91786d2d18b59de1a789333e953e0&timestamp=1565254011&nonce=1565061276&echostr=5Kj%2F%2Faj2aSxpdLR9aH6vDcgoH325Zbc7dIJF%2BGNcWgU%2Bnl%2FjlZwf3boBYkffrgOSnD0JUBjgkmUo%2Ft9BcePnOg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=54f9129223a91786d2d18b59de1a789333e953e0&timestamp=1565254011&nonce=1565061276&echostr=5Kj%2F%2Faj2aSxpdLR9aH6vDcgoH325Zbc7dIJF%2BGNcWgU%2Bnl%2FjlZwf3boBYkffrgOSnD0JUBjgkmUo%2Ft9BcePnOg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:47:17 [info] 72#72: *244 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:18 [info] 72#72: *245 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:22 [info] 72#72: *246 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:23 [info] 72#72: *248 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:23 [info] 72#72: *250 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:44 [info] 72#72: *252 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:44 [info] 72#72: *254 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:48 [info] 72#72: *257 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:49 [info] 72#72: *256 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:53 [info] 72#72: *258 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:54 [info] 72#72: *260 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:55 [info] 72#72: *262 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:47:56 [info] 72#72: *264 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:48:00 [info] 72#72: *266 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=8075656942ded891e4b327d5f7b5f512da36bd6c&timestamp=1565254079&nonce=1565082149&echostr=DY7zhFNEH2Bf%2BHbneIMN431LLKoZyz%2F32nkd%2BIVV%2Bo0rVcMLhZVOrFGeMRQketThqjHh7MFeFBH8BnhGV9Ch6A%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=8075656942ded891e4b327d5f7b5f512da36bd6c&timestamp=1565254079&nonce=1565082149&echostr=DY7zhFNEH2Bf%2BHbneIMN431LLKoZyz%2F32nkd%2BIVV%2Bo0rVcMLhZVOrFGeMRQketThqjHh7MFeFBH8BnhGV9Ch6A%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:48:01 [info] 72#72: *268 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:48:01 [info] 72#72: *269 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:48:01 [info] 72#72: *274 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=bf0458cb8cae118de1a13517b2c149e6c8621114&timestamp=1565254079&nonce=1565090783&echostr=8OAMoiY6d5F515aX1z5BBorgxEjXAaWWcZhO3fz%2FhWEQzWL8FFvtIGN28z0b17MSxBIpAu4YQHSmn2vzMapMRg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=bf0458cb8cae118de1a13517b2c149e6c8621114&timestamp=1565254079&nonce=1565090783&echostr=8OAMoiY6d5F515aX1z5BBorgxEjXAaWWcZhO3fz%2FhWEQzWL8FFvtIGN28z0b17MSxBIpAu4YQHSmn2vzMapMRg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:48:02 [info] 72#72: *272 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:48:02 [info] 72#72: *276 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:48:12 [notice] 1#1: signal 1 (SIGHUP) received from 75, reconfiguring
+2019/08/08 08:48:12 [notice] 1#1: reconfiguring
+2019/08/08 08:48:12 [notice] 1#1: using the "epoll" event method
+2019/08/08 08:48:12 [notice] 1#1: start worker processes
+2019/08/08 08:48:12 [notice] 1#1: start worker process 76
+2019/08/08 08:48:12 [alert] 76#76: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:48:12 [notice] 1#1: start worker process 77
+2019/08/08 08:48:12 [alert] 77#77: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 08:48:12 [notice] 72#72: gracefully shutting down
+2019/08/08 08:48:12 [notice] 73#73: gracefully shutting down
+2019/08/08 08:48:12 [notice] 72#72: exiting
+2019/08/08 08:48:12 [notice] 73#73: exiting
+2019/08/08 08:48:12 [notice] 73#73: exit
+2019/08/08 08:48:12 [notice] 72#72: exit
+2019/08/08 08:48:12 [notice] 1#1: signal 17 (SIGCHLD) received from 72
+2019/08/08 08:48:12 [notice] 1#1: worker process 72 exited with code 0
+2019/08/08 08:48:12 [notice] 1#1: worker process 73 exited with code 0
+2019/08/08 08:48:12 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 08:48:19 [info] 76#76: *278 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=0418c5c706564ea7b43748ab4e73180d756632db&timestamp=1565254098&nonce=1565086855&echostr=DsnhOIGzAZMKHQo5IPptIc3YLlTfjM%2BQzIxesaU1JcbRf49NdVVZdfpUaXa7MZaCrLYsYBrg5tXoSLp%2BOCuxUw%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=0418c5c706564ea7b43748ab4e73180d756632db&timestamp=1565254098&nonce=1565086855&echostr=DsnhOIGzAZMKHQo5IPptIc3YLlTfjM%2BQzIxesaU1JcbRf49NdVVZdfpUaXa7MZaCrLYsYBrg5tXoSLp%2BOCuxUw%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:48:20 [info] 76#76: *280 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:48:20 [info] 76#76: *283 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=0418c5c706564ea7b43748ab4e73180d756632db&timestamp=1565254098&nonce=1565086855&echostr=DsnhOIGzAZMKHQo5IPptIc3YLlTfjM%2BQzIxesaU1JcbRf49NdVVZdfpUaXa7MZaCrLYsYBrg5tXoSLp%2BOCuxUw%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=0418c5c706564ea7b43748ab4e73180d756632db&timestamp=1565254098&nonce=1565086855&echostr=DsnhOIGzAZMKHQo5IPptIc3YLlTfjM%2BQzIxesaU1JcbRf49NdVVZdfpUaXa7MZaCrLYsYBrg5tXoSLp%2BOCuxUw%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:48:21 [info] 76#76: *282 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=5ac1080e616972aae4ce3051afea9fa978ce1e2d&timestamp=1565254098&nonce=1565075903&echostr=QRLKYlkstADPRGsWH77WE0dI4sSPCWwMdUHkoo2gO%2F0859XugF0Mu05gkPf%2FOhE5t0cxuZM%2Bf%2BB3jsQPgVob3g%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=5ac1080e616972aae4ce3051afea9fa978ce1e2d&timestamp=1565254098&nonce=1565075903&echostr=QRLKYlkstADPRGsWH77WE0dI4sSPCWwMdUHkoo2gO%2F0859XugF0Mu05gkPf%2FOhE5t0cxuZM%2Bf%2BB3jsQPgVob3g%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 08:48:22 [info] 76#76: *286 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:49:06 [info] 76#76: *288 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:49:06 [info] 76#76: *289 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:49:53 [info] 76#76: *292 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:49:55 [info] 76#76: *294 client 172.21.104.106 closed keepalive connection
+2019/08/08 08:49:58 [info] 76#76: *296 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:10:13 [info] 76#76: *298 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:10:14 [info] 76#76: *301 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=da392af2461106508fc4d9030e4acddaa60c3442&timestamp=1565255410&nonce=1565404769&echostr=IFzChH4S0o9m4ZNVD6mE6haVa3t85XQJE4yvSfrAreShSGGu7vDdGMaELmkJhEjPJfeGgWIlkdP13fkkR1n4eg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=da392af2461106508fc4d9030e4acddaa60c3442&timestamp=1565255410&nonce=1565404769&echostr=IFzChH4S0o9m4ZNVD6mE6haVa3t85XQJE4yvSfrAreShSGGu7vDdGMaELmkJhEjPJfeGgWIlkdP13fkkR1n4eg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:10:15 [info] 76#76: *300 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=da392af2461106508fc4d9030e4acddaa60c3442&timestamp=1565255410&nonce=1565404769&echostr=IFzChH4S0o9m4ZNVD6mE6haVa3t85XQJE4yvSfrAreShSGGu7vDdGMaELmkJhEjPJfeGgWIlkdP13fkkR1n4eg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=da392af2461106508fc4d9030e4acddaa60c3442&timestamp=1565255410&nonce=1565404769&echostr=IFzChH4S0o9m4ZNVD6mE6haVa3t85XQJE4yvSfrAreShSGGu7vDdGMaELmkJhEjPJfeGgWIlkdP13fkkR1n4eg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:10:15 [info] 76#76: *303 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:10:15 [info] 76#76: *309 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=d041c06d7067029b7e731d7a20f70de2de35b649&timestamp=1565255410&nonce=1565401227&echostr=sWk7Zg2g%2BWMj1e%2Bwdor5bTGu9mLQjDhTD7PL2N7cpDArLo50jp7Os9jUEOeGbsbtEjtuRM%2FVHMExI%2F1CkEfgsA%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=d041c06d7067029b7e731d7a20f70de2de35b649&timestamp=1565255410&nonce=1565401227&echostr=sWk7Zg2g%2BWMj1e%2Bwdor5bTGu9mLQjDhTD7PL2N7cpDArLo50jp7Os9jUEOeGbsbtEjtuRM%2FVHMExI%2F1CkEfgsA%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:10:16 [info] 76#76: *310 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:10:16 [info] 76#76: *307 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:10:16 [info] 76#76: *313 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:10:17 [info] 76#76: *306 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=da392af2461106508fc4d9030e4acddaa60c3442&timestamp=1565255410&nonce=1565404769&echostr=IFzChH4S0o9m4ZNVD6mE6haVa3t85XQJE4yvSfrAreShSGGu7vDdGMaELmkJhEjPJfeGgWIlkdP13fkkR1n4eg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=da392af2461106508fc4d9030e4acddaa60c3442&timestamp=1565255410&nonce=1565404769&echostr=IFzChH4S0o9m4ZNVD6mE6haVa3t85XQJE4yvSfrAreShSGGu7vDdGMaELmkJhEjPJfeGgWIlkdP13fkkR1n4eg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:10:18 [info] 76#76: *316 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=65066c0e738cf94bdc83f69739a65637980ce0a4&timestamp=1565255414&nonce=1564500942&echostr=fwayJgy1nmRvIuTnZH1awAj38kCc0FdjLuZT5bc6PQe8yXAUHOUAdOXIHxehE6keyA2jMa%2BNb33pJwWLZrkOYg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=65066c0e738cf94bdc83f69739a65637980ce0a4&timestamp=1565255414&nonce=1564500942&echostr=fwayJgy1nmRvIuTnZH1awAj38kCc0FdjLuZT5bc6PQe8yXAUHOUAdOXIHxehE6keyA2jMa%2BNb33pJwWLZrkOYg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:10:20 [info] 76#76: *318 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=65066c0e738cf94bdc83f69739a65637980ce0a4&timestamp=1565255414&nonce=1564500942&echostr=fwayJgy1nmRvIuTnZH1awAj38kCc0FdjLuZT5bc6PQe8yXAUHOUAdOXIHxehE6keyA2jMa%2BNb33pJwWLZrkOYg%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=65066c0e738cf94bdc83f69739a65637980ce0a4&timestamp=1565255414&nonce=1564500942&echostr=fwayJgy1nmRvIuTnZH1awAj38kCc0FdjLuZT5bc6PQe8yXAUHOUAdOXIHxehE6keyA2jMa%2BNb33pJwWLZrkOYg%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:11:12 [info] 76#76: *321 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:12 [info] 76#76: *320 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:27 [info] 76#76: *325 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:28 [info] 76#76: *324 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:30 [info] 76#76: *329 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=d35b93ddda08c4141bfd76240b3a5f070910a36e&timestamp=1565255485&nonce=1564804563&echostr=u7uQsI8jj8YjRSCQGsrisItMt9mAb8Hf71eaBe5Tj%2F4%2BsxZ3l5Z%2FGHsXuYo%2BCYSrhEAxbznICxJqQUItEaYqyw%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=d35b93ddda08c4141bfd76240b3a5f070910a36e&timestamp=1565255485&nonce=1564804563&echostr=u7uQsI8jj8YjRSCQGsrisItMt9mAb8Hf71eaBe5Tj%2F4%2BsxZ3l5Z%2FGHsXuYo%2BCYSrhEAxbznICxJqQUItEaYqyw%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:11:30 [info] 76#76: *331 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=869bee2e4c90bb76d29ac944d18b8ea8bc77cf70&timestamp=1565255486&nonce=1565219277&echostr=VTlZD%2FY2bzVWsAZjxgqP6guK10O2Yl%2BFVublpymuOdrNNNpE0ttPd43bEY0zs6e3Z4BTh09Rm7NxJD7thzXxZw%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=869bee2e4c90bb76d29ac944d18b8ea8bc77cf70&timestamp=1565255486&nonce=1565219277&echostr=VTlZD%2FY2bzVWsAZjxgqP6guK10O2Yl%2BFVublpymuOdrNNNpE0ttPd43bEY0zs6e3Z4BTh09Rm7NxJD7thzXxZw%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:11:32 [info] 76#76: *328 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=869bee2e4c90bb76d29ac944d18b8ea8bc77cf70&timestamp=1565255486&nonce=1565219277&echostr=VTlZD%2FY2bzVWsAZjxgqP6guK10O2Yl%2BFVublpymuOdrNNNpE0ttPd43bEY0zs6e3Z4BTh09Rm7NxJD7thzXxZw%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=869bee2e4c90bb76d29ac944d18b8ea8bc77cf70&timestamp=1565255486&nonce=1565219277&echostr=VTlZD%2FY2bzVWsAZjxgqP6guK10O2Yl%2BFVublpymuOdrNNNpE0ttPd43bEY0zs6e3Z4BTh09Rm7NxJD7thzXxZw%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:11:32 [info] 76#76: *336 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=5aaa72a06327d6fcaefb54d19991a97496e6dbbf&timestamp=1565255490&nonce=1564578785&echostr=6p1YZQDE5BB3NMlG5oUSrLGjEDYL9mCySYgD8njLHdhOLwMWxdHe2I26TzGScY4D7oYubcG3vv2Ne3piqCqn5Q%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=5aaa72a06327d6fcaefb54d19991a97496e6dbbf&timestamp=1565255490&nonce=1564578785&echostr=6p1YZQDE5BB3NMlG5oUSrLGjEDYL9mCySYgD8njLHdhOLwMWxdHe2I26TzGScY4D7oYubcG3vv2Ne3piqCqn5Q%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:11:32 [info] 76#76: *333 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:32 [info] 76#76: *338 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=fef4cc86f06988e65e128220751add76170993e1&timestamp=1565255490&nonce=1564506412&echostr=M42tj9V9a1kFT619VTXzjiOCQnKFbaWAMaCmfCIo7wEpSOQteDWAoz0uT5IGIEeAhTU43SjK4tVya%2BEnXhEVeA%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=fef4cc86f06988e65e128220751add76170993e1&timestamp=1565255490&nonce=1564506412&echostr=M42tj9V9a1kFT619VTXzjiOCQnKFbaWAMaCmfCIo7wEpSOQteDWAoz0uT5IGIEeAhTU43SjK4tVya%2BEnXhEVeA%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:11:32 [info] 76#76: *340 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:35 [info] 76#76: *343 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=fef4cc86f06988e65e128220751add76170993e1&timestamp=1565255490&nonce=1564506412&echostr=M42tj9V9a1kFT619VTXzjiOCQnKFbaWAMaCmfCIo7wEpSOQteDWAoz0uT5IGIEeAhTU43SjK4tVya%2BEnXhEVeA%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=fef4cc86f06988e65e128220751add76170993e1&timestamp=1565255490&nonce=1564506412&echostr=M42tj9V9a1kFT619VTXzjiOCQnKFbaWAMaCmfCIo7wEpSOQteDWAoz0uT5IGIEeAhTU43SjK4tVya%2BEnXhEVeA%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:11:35 [info] 76#76: *342 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=fef4cc86f06988e65e128220751add76170993e1&timestamp=1565255490&nonce=1564506412&echostr=M42tj9V9a1kFT619VTXzjiOCQnKFbaWAMaCmfCIo7wEpSOQteDWAoz0uT5IGIEeAhTU43SjK4tVya%2BEnXhEVeA%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=fef4cc86f06988e65e128220751add76170993e1&timestamp=1565255490&nonce=1564506412&echostr=M42tj9V9a1kFT619VTXzjiOCQnKFbaWAMaCmfCIo7wEpSOQteDWAoz0uT5IGIEeAhTU43SjK4tVya%2BEnXhEVeA%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:11:36 [info] 76#76: *346 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:36 [info] 76#76: *348 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:39 [info] 76#76: *351 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/?msg_signature=1f9932ab1a2ba061b724b126f03e436e727779b9&timestamp=1565255495&nonce=1565019548&echostr=m%2FRpi9pA23stuSrMydMZKlA79RS2%2FBnmYSIY7vMExgbLyYBf%2BiujHJkfs8t3rnkhoBhZsN%2FAxAKwV%2FpxCPT57g%3D%3D HTTP/1.1", upstream: "http://172.21.104.106:7001/v1/hook/wework/?msg_signature=1f9932ab1a2ba061b724b126f03e436e727779b9&timestamp=1565255495&nonce=1565019548&echostr=m%2FRpi9pA23stuSrMydMZKlA79RS2%2FBnmYSIY7vMExgbLyYBf%2BiujHJkfs8t3rnkhoBhZsN%2FAxAKwV%2FpxCPT57g%3D%3D", host: "gw.free.idcfengye.com"
+2019/08/08 09:11:40 [info] 76#76: *350 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:40 [info] 76#76: *354 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:41 [info] 76#76: *356 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:47 [info] 76#76: *360 client 172.21.104.106 closed keepalive connection
+2019/08/08 09:11:48 [info] 76#76: *358 client 172.21.104.106 closed keepalive connection
+2019/08/08 12:48:58 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2019/08/08 12:48:58 [notice] 76#76: exiting
+2019/08/08 12:48:58 [notice] 77#77: exiting
+2019/08/08 12:48:58 [notice] 76#76: exit
+2019/08/08 12:48:58 [notice] 77#77: exit
+2019/08/08 12:48:58 [notice] 1#1: signal 14 (SIGALRM) received
+2019/08/08 12:48:58 [notice] 1#1: signal 17 (SIGCHLD) received from 76
+2019/08/08 12:48:58 [notice] 1#1: worker process 76 exited with code 0
+2019/08/08 12:48:58 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 12:48:58 [notice] 1#1: signal 17 (SIGCHLD) received from 77
+2019/08/08 12:48:58 [notice] 1#1: worker process 77 exited with code 0
+2019/08/08 12:48:58 [notice] 1#1: exit
+2019/08/08 12:57:00 [notice] 1#1: using the "epoll" event method
+2019/08/08 12:57:00 [notice] 1#1: nginx/1.16.0
+2019/08/08 12:57:00 [notice] 1#1: built by gcc 8.3.0 (Alpine 8.3.0) 
+2019/08/08 12:57:00 [notice] 1#1: OS: Linux 4.19.57-microsoft-standard
+2019/08/08 12:57:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:4096
+2019/08/08 12:57:00 [notice] 1#1: start worker processes
+2019/08/08 12:57:00 [notice] 1#1: start worker process 6
+2019/08/08 12:57:00 [alert] 6#6: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 12:57:00 [notice] 1#1: start worker process 7
+2019/08/08 12:57:00 [alert] 7#7: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 12:59:30 [notice] 1#1: signal 1 (SIGHUP) received from 15, reconfiguring
+2019/08/08 12:59:30 [notice] 1#1: reconfiguring
+2019/08/08 12:59:30 [notice] 1#1: using the "epoll" event method
+2019/08/08 12:59:30 [notice] 1#1: start worker processes
+2019/08/08 12:59:30 [notice] 1#1: start worker process 16
+2019/08/08 12:59:30 [alert] 16#16: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 12:59:30 [notice] 1#1: start worker process 17
+2019/08/08 12:59:30 [alert] 17#17: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/08 12:59:30 [notice] 6#6: gracefully shutting down
+2019/08/08 12:59:30 [notice] 7#7: gracefully shutting down
+2019/08/08 12:59:30 [notice] 7#7: exiting
+2019/08/08 12:59:30 [notice] 7#7: exit
+2019/08/08 12:59:30 [notice] 6#6: exiting
+2019/08/08 12:59:30 [notice] 6#6: exit
+2019/08/08 12:59:31 [notice] 1#1: signal 17 (SIGCHLD) received from 7
+2019/08/08 12:59:31 [notice] 1#1: worker process 7 exited with code 0
+2019/08/08 12:59:31 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 12:59:31 [notice] 1#1: signal 17 (SIGCHLD) received from 6
+2019/08/08 12:59:31 [notice] 1#1: worker process 6 exited with code 0
+2019/08/08 12:59:31 [notice] 1#1: signal 29 (SIGIO) received
+2019/08/08 12:59:41 [info] 16#16: *8 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.21.104.106, server: gw.free.idcfengye.com, request: "GET /hook/wework/ HTTP/1.1", upstream: "http://39.107.218.25:80/okr-server/v1/hook/wework/", host: "gw.free.idcfengye.com"
+2019/08/08 13:04:19 [info] 16#16: *37 client 172.21.104.106 closed keepalive connection
+2019/08/08 13:08:14 [info] 16#16: *39 client 172.21.104.106 closed keepalive connection
+2019/08/08 13:14:53 [info] 16#16: *41 client 172.21.104.106 closed keepalive connection
+2019/08/09 02:24:45 [notice] 1#1: using the "epoll" event method
+2019/08/09 02:24:45 [notice] 1#1: nginx/1.16.0
+2019/08/09 02:24:45 [notice] 1#1: built by gcc 8.3.0 (Alpine 8.3.0) 
+2019/08/09 02:24:45 [notice] 1#1: OS: Linux 4.19.57-microsoft-standard
+2019/08/09 02:24:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:4096
+2019/08/09 02:24:45 [notice] 1#1: start worker processes
+2019/08/09 02:24:45 [notice] 1#1: start worker process 6
+2019/08/09 02:24:45 [alert] 6#6: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/09 02:24:45 [notice] 1#1: start worker process 7
+2019/08/09 02:24:45 [alert] 7#7: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/09 04:57:32 [notice] 1#1: using the "epoll" event method
+2019/08/09 04:57:32 [notice] 1#1: nginx/1.16.0
+2019/08/09 04:57:32 [notice] 1#1: built by gcc 8.3.0 (Alpine 8.3.0) 
+2019/08/09 04:57:32 [notice] 1#1: OS: Linux 4.19.57-microsoft-standard
+2019/08/09 04:57:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:4096
+2019/08/09 04:57:32 [notice] 1#1: start worker processes
+2019/08/09 04:57:32 [notice] 1#1: start worker process 6
+2019/08/09 04:57:32 [notice] 1#1: start worker process 7
+2019/08/09 04:57:32 [alert] 6#6: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
+2019/08/09 04:57:32 [alert] 7#7: setrlimit(RLIMIT_NOFILE, 65535) failed (1: Operation not permitted)
