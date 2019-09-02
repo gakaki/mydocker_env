@@ -7,17 +7,22 @@ services:
         image: redis:latest
         restart: always
         ports:
-            - 6379:6379
+            - 16379:6379
 
     db:
         image: mysql:latest
         command: --default-authentication-plugin=mysql_native_password
         restart: always
+        volumes:
+            - ./data/mysql:/var/lib/mysql
         ports:
-            - 33707:3306
+            - 56666:3306
         environment:
-            MYSQL_ROOT_PASSWORD: ZPJ@abc.123
-
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: okr
+            MYSQL_USER: root
+            MYSQL_PASSWORD: root
+            MYSQL_ROOT_HOST: '%'
     web:
         image: fholzer/nginx-brotli
         restart: always
@@ -58,7 +63,7 @@ services:
             - ./php/etc:/usr/local/etc
             - ./php/log:/var/log/php
         ports:
-            - 9999:9999
+            - 39999:9999
         restart: unless-stopped
         tty: true
         environment:
