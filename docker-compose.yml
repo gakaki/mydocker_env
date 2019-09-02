@@ -14,7 +14,7 @@ services:
         command: --default-authentication-plugin=mysql_native_password
         restart: always
         ports:
-            - 33706:3306
+            - 33707:3306
         environment:
             MYSQL_ROOT_PASSWORD: ZPJ@abc.123
 
