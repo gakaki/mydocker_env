@@ -10,10 +10,10 @@ ENV NGX_BROTLI_COMMIT="bfd2885b2da4d763fed18f49216bb935223cd34b" \
 
 # Docker Build Arguments
 ARG RESTY_VERSION="1.15.8.2"
-ARG RESTY_LUAROCKS_VERSION="3.2.0"
+ARG RESTY_LUAROCKS_VERSION="3.2.1"
 ARG RESTY_OPENSSL_VERSION="1.1.0h"
 ARG RESTY_PCRE_VERSION="8.43"
-ARG RESTY_J="4"
+ARG RESTY_J="12"
 ARG RESTY_CONFIG_OPTIONS="\
     --with-file-aio \
     --with-http_addition_module \
@@ -43,7 +43,7 @@ ARG RESTY_CONFIG_OPTIONS="\
     --with-stream \
     --with-stream_ssl_module \
     --with-threads \
-    --add-module=/usr/src/ngx_brotli \
+    --add-module=/tmp/ngx_brotli \
     "
 ARG RESTY_CONFIG_OPTIONS_MORE=""
 
@@ -62,9 +62,9 @@ ARG _RESTY_CONFIG_DEPS="--with-openssl=/tmp/openssl-${RESTY_OPENSSL_VERSION} --w
 # 2) Download and untar OpenSSL, PCRE, and OpenResty
 # 3) Build OpenResty
 # 4) Cleanup
-
-RUN DEBIAN_FRONTEND=noninteractive apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
+RUN DEBIAN_FRONTEND=noninteractive apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         build-essential \
         ca-certificates \
         curl \
@@ -83,35 +83,61 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
         autoconf \
         libtool \
         automake \
-    && cd /tmp \
+        libxml2-dev \
+        libpng-dev \
+        libz-dev \
+        libjpeg-dev \
+        libfreetype6-dev \
+        libxpm-dev \
+        libx11-dev \
+        libxt-dev \
+        libfontconfig-dev \
+        libvpx-dev \
+        libtiff-dev
+
+RUN cd /tmp \
     && curl -fSL https://www.openssl.org/source/openssl-${RESTY_OPENSSL_VERSION}.tar.gz -o openssl-${RESTY_OPENSSL_VERSION}.tar.gz \
     && tar xzf openssl-${RESTY_OPENSSL_VERSION}.tar.gz \
     && curl -fSL https://ftp.pcre.org/pub/pcre/pcre-${RESTY_PCRE_VERSION}.tar.gz -o pcre-${RESTY_PCRE_VERSION}.tar.gz \
     && tar xzf pcre-${RESTY_PCRE_VERSION}.tar.gz \
     && curl -fSL https://openresty.org/download/openresty-${RESTY_VERSION}.tar.gz -o openresty-${RESTY_VERSION}.tar.gz \
-    && tar xzf openresty-${RESTY_VERSION}.tar.gz \
-    && cd /usr/local/lib \
-    && git clone https://github.com/bagder/libbrotli \
-    && cd /usr/local/lib/libbrotli \
-    && ./autogen.sh \
-    && ./configure \
+    && tar xzf openresty-${RESTY_VERSION}.tar.gz
+
+
+# RUN cd /tmp && git clone --recursive https://github.com/google/ngx_brotli.git \
+#     && cd ngx_brotli \
+#     && git submodule update --init
+
+ADD ./ngx_brotli /tmp/ngx_brotli
+
+
+# RUN cd /tmp/openresty-${RESTY_VERSION} \
+#     && ./configure -j${RESTY_J} ${_RESTY_CONFIG_DEPS} ${RESTY_CONFIG_OPTIONS} ${RESTY_CONFIG_OPTIONS_MORE} \
+#     && make -j${RESTY_J} \
+#     && make -j${RESTY_J} install \
+#     && cd /tmp \
+#     && rm -rf \
+#         openssl-${RESTY_OPENSSL_VERSION} \
+#         openssl-${RESTY_OPENSSL_VERSION}.tar.gz \
+#         openresty-${RESTY_VERSION}.tar.gz openresty-${RESTY_VERSION} \
+#         pcre-${RESTY_PCRE_VERSION}.tar.gz pcre-${RESTY_PCRE_VERSION}
+
+RUN cd /tmp/openresty-${RESTY_VERSION} \
+    && ./configure -j8 ${_RESTY_CONFIG_DEPS} ${RESTY_CONFIG_OPTIONS} ${RESTY_CONFIG_OPTIONS_MORE} \
+    && make -j8 \
     && make install \
-    && cd /usr/src \
-    && git clone --recursive https://github.com/google/ngx_brotli.git \
-    && cd ngx_brotli \
-    && git checkout -b $NGX_BROTLI_COMMIT $NGX_BROTLI_COMMIT \
-    && cd /tmp/openresty-${RESTY_VERSION} \
-    && ./configure -j${RESTY_J} ${_RESTY_CONFIG_DEPS} ${RESTY_CONFIG_OPTIONS} ${RESTY_CONFIG_OPTIONS_MORE} \
-    && make -j${RESTY_J} \
-    && make -j${RESTY_J} install \
     && cd /tmp \
     && rm -rf \
         openssl-${RESTY_OPENSSL_VERSION} \
         openssl-${RESTY_OPENSSL_VERSION}.tar.gz \
         openresty-${RESTY_VERSION}.tar.gz openresty-${RESTY_VERSION} \
-        pcre-${RESTY_PCRE_VERSION}.tar.gz pcre-${RESTY_PCRE_VERSION} \
-    && curl -fSL https://github.com/luarocks/luarocks/archive/${RESTY_LUAROCKS_VERSION}.tar.gz -o luarocks-${RESTY_LUAROCKS_VERSION}.tar.gz \
-    && tar xzf luarocks-${RESTY_LUAROCKS_VERSION}.tar.gz \
+        pcre-${RESTY_PCRE_VERSION}.tar.gz pcre-${RESTY_PCRE_VERSION}
+
+
+
+# RUN curl -fSL https://github.com/luarocks/luarocks/archive/${RESTY_LUAROCKS_VERSION}.tar.gz -o luarocks-${RESTY_LUAROCKS_VERSION}.tar.gz
+COPY luarocks-3.2.1.tar.gz /tmp/luarocks-3.2.1.tar.gz
+RUN cd /tmp && tar xzf luarocks-${RESTY_LUAROCKS_VERSION}.tar.gz \
     && cd luarocks-${RESTY_LUAROCKS_VERSION} \
     && ./configure \
         --prefix=/usr/local/openresty/luajit \
@@ -133,6 +159,5 @@ RUN groupadd nginx \
 
 # Copy nginx configuration files
 COPY nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
-COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
 
 CMD ["/usr/local/openresty/bin/openresty", "-g", "daemon off;"]
